@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>标题</title>
+<link rel="stylesheet" type="text/css" href="../static/css/style.css" th:href="@{/css/style.css}" />
+<script type="text/javascript" src="../static/js/my.js" th:src="@{/js/my.js}"></script>
+
+
+</head>
+<body>
+    
+    <table border="1px;">
+     <tr>
+     <th>编号</th>
+     <th>账号</th>
+     <th>密码</th>
+     </tr >
+     <tr id="u" th:each="user:${list}">
+     <th th:text="${user.id}"></th>
+     <th th:text="${user.username}"></th>
+     <th th:text="${user.password}"></th>
+     </tr>
+    </table>
+
+</body>
+</html>

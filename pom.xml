@@ -1,0 +1,66 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.entor</groupId>
+  <artifactId>SpringBoot_Thymeleaf1223</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+    
+<parent>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-parent</artifactId><!-- 启动父类 -->
+	<version>1.5.7.RELEASE</version>
+	<relativePath />
+</parent> 
+
+
+<dependencies>
+
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-web</artifactId><!-- 启动web -->
+</dependency>
+
+      
+	
+		
+			<!--jsp-api -->
+		<dependency>
+			<groupId>javax.servlet.jsp</groupId>
+			<artifactId>jsp-api</artifactId>
+			<version>2.2</version>
+			<scope>provided</scope>
+		</dependency>
+
+		 
+    <!-- 集成jsp -->
+         <dependency>
+<groupId>org.springframework.boot</groupId>
+<artifactId>spring-boot-starter-tomcat</artifactId>
+</dependency>
+	
+		<dependency>    
+        <!--访问jsp -->
+           <groupId>org.apache.tomcat.embed</groupId>
+ 
+           <artifactId>tomcat-embed-jasper</artifactId>
+ 
+           <scope>provided</scope>
+       </dependency>
+       
+       
+       <!-- 热部署 -->  
+       <dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-devtools</artifactId>
+    <optional>true</optional>
+</dependency>
+
+    <!-- 集成Thymeleaf -->
+    <dependency>
+<groupId>org.springframework.boot</groupId>
+<artifactId>spring-boot-starter-thymeleaf</artifactId>
+</dependency>
+</dependencies>
+
+ 
+  
+</project>

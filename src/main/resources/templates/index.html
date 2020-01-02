@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>标题</title>
+<script type="text/javascript">
+function Person(age,name){
+	this.sayHello = function(){
+		alert("说好")
+		
+	}
+	
+}
+
+function Student(score){
+	
+	this.sayScore = function(){
+		alert("说成绩")
+	}
+}
+
+Student.prototype = new Person();
+Student.prototype.bark = function () {
+    document.write("Student继承Person<br/>");
+}
+</script>
+</head>
+<body>
+
+<!-- <h2>欢迎<span th:text="${name}"></span>,使用Thymeleaf! </h2>
+<div>
+ <p th:text="${user.id}">默认ID</p>
+ <p th:text="${user.username}">默认用户名</p>
+ <p th:text="${user.password}">默认密码</p>
+</div> -->
+<div onclick="Student()">HS</div>
+   
+  
+
+  
+</body>
+</html> 
